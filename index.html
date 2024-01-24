@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High School</title>
+    <title>Enoy School</title>
     <!-- Tailwind and Daisy ui Cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,7 +18,7 @@
     <!-- Header -->
     <header>
         <!-- navigation bar -->
-        <nav>
+        <nav class="fixed top-0 w-full bg-base-100 z-50">
             <!-- for mobile and tablet -->
             <div class="navbar bg-base-100 lg:hidden">
                 <div class="navbar-start">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="navbar-center">
-                    <a class="btn btn-ghost text-xl">High School</a>
+                    <a class="btn btn-ghost text-xl">Enoy School</a>
                 </div>
                 <div class="navbar-end">
                     <button class="btn btn-ghost btn-circle">
@@ -69,7 +69,7 @@
             <!-- for Laptop and desktop -->
             <div class="navbar bg-base-100 hidden lg:flex lg:items-center lg:justify-between">
                 <div class="navbar-start">
-                    <a class="btn btn-ghost text-xl">High School</a>
+                    <a class="btn btn-ghost text-xl">Enoy School</a>
                 </div>
                 <div class="navbar-center">
                     <!-- Customize the design for lg screens as needed -->
@@ -110,13 +110,60 @@
 
     <main>
 
+        <!-- component -->
+<!-- This is an example component -->
+<div class="max-w-full mx-4 mt-20">
+
+	<div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative h-56 rounded-lg sm:h-80 xl:h-80 2xl:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                <img src="Image/slide-1.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="Image/slide-2.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="Image/slide-3.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</div>
+
+
+
         <!-- About Section -->
-        <section class="grid grid-cols-1 lg:grid-cols-2">
+        <section class="grid grid-cols-1 lg:grid-cols-2 mt-8 lg:mt-0">
             <div class="px-6 my-auto">
                 <button class="btn btn-xs btn-soft-success btn-pill text-[#00c9a7]">About</button>
-                <h1 class="my-4 card-title text-[#377dff] text-2xl lg:text-3xl">Welcome to My High School</h1>
-                <p>My High School (NHS) is a public secondary school in Bellevue, Washington. It serves students in
-                    grades 9–12 in the southern part of the Bellevue School District, including the neighborhoods of
+                <h1 class="my-4 card-title text-[#377dff] text-2xl lg:text-3xl">Welcome to My Enoy School</h1>
+                <p>My Enoy School (NS) is a public secondary school in Bangladesh, Comilla. It serves students in
+                    grades 9–12 in the southern part of the Bangladesh School District, including the neighborhoods of
                     Eastgate, Factoria, Newport Hills, Newport Shores, Somerset, The Summit, and Sunset. As of the
                     2014-2015 school year, the principal is Dion Yahoudy. The mascot is the Knight, and the school
                     colors are scarlet and gold.</p>
@@ -143,12 +190,11 @@
 
                 <div class="rounded-md bg-[#f8f9fa]">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                            class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="Image/teacher-1.jpg" class="max-w-52 min-h-72 rounded-lg shadow-2xl" />
                         <div class="grid">
-                            <h1 class="text-center lg:text-start text-xl font-bold">Kamal Hossen</h1>
-                            <button class="btn mx-auto lg:ml-0 rounded-3xl mt-4 bg-[#377dff] text-white">Get
-                                Started</button>
+                            <h1 class="text-center lg:text-start text-xl font-bold">Asifurrahman</h1>
+                            <button class="btn mx-auto lg:ml-0 rounded-3xl mt-4 bg-[#377dff] text-white">
+                                Senior Lecturer</button>
                             <p class="py-6 text-center lg:text-start">Provident cupiditate voluptatem et in. Quaerat
                                 fugiat ut assumenda excepturi
                                 exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
@@ -168,12 +214,11 @@
 
                 <div class="rounded-md bg-[#f8f9fa]">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                            class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="Image/teacher-2.png" class="min-w-52 max-w-52 min-h-72 rounded-lg shadow-2xl" />
                         <div class="grid">
-                            <h1 class="text-center lg:text-start text-xl font-bold">Jamal Hossen</h1>
-                            <button class="btn mx-auto lg:ml-0 rounded-3xl mt-4 bg-[#377dff] text-white">Get
-                                Started</button>
+                            <h1 class="text-center lg:text-start text-xl font-bold">Shaporan</h1>
+                            <button class="btn mx-auto lg:ml-0 rounded-3xl mt-4 bg-[#377dff] text-white">
+                                Senior Lecturer</button>
                             <p class="py-6 text-center lg:text-start">Provident cupiditate voluptatem et in. Quaerat
                                 fugiat ut assumenda excepturi
                                 exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
@@ -208,9 +253,50 @@
 
     </main>
 
-    <footer>
-        
+    <!-- footer section -->
+    <footer class="footer grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 p-10 bg-[#f8f9fa] text-black mt-12">
+
+        <nav
+            class="col-span-2 m-auto w-auto lg:w-4/6 flex flex-col items-center justify-center text-center px-6 sm:justify-start sm:items-start sm:text-start sm:px-2">
+
+            <header class="text-[#377dff] font-bold text-xl">Enoy School</header>
+
+            <a class="link link-hover text-sm">© All the rights reserved to Enoy</a></a>
+
+            <div class="flex gap-2 justify-center items-center">
+                <i class="fa-regular fa-envelope"></i><a class="link link-hover">enoy-school@support.com</a>
+            </div>
+
+            <div class="flex gap-2 justify-center items-center">
+                <i class="fa-solid fa-phone"></i><a class="link link-hover">+880 18104-79196</a>
+            </div>
+
+        </nav>
+
+
+        <nav class="col-span-1 flex flex-col items-center lg:items-start">
+            <header class="footer-title">About Us</header>
+            <a class="link link-hover">About</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Events</a>
+            <a class="link link-hover">Gallery</a>
+        </nav>
+        <nav class="col-span-1  flex flex-col items-center lg:items-start">
+            <header class="footer-title">Resources</header>
+            <a class="link link-hover">Terms</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie</a>
+        </nav>
+
+        <nav class="col-span-2 m-auto sm:m-0 flex flex-col items-center lg:items-start">
+            <header class="footer-title">Contact</header>
+            <a class="link link-hover">+880 18104-79196</a>
+            <a class="link link-hover">enoy-school@support.com</a>
+            <a class="link link-hover">Chauddagram, Kashinagar</a>
+            <a class="link link-hover">Ranir Bazar Enoy School</a>
+        </nav>
     </footer>
+
 
 </body>
 
