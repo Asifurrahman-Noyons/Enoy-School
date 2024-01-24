@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School</title>
+    <!-- Tailwind and Daisy ui Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font aw-some link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- navigation bar -->
+        <nav>
+            <!-- for mobile and tablet -->
+            <div class="navbar bg-base-100 lg:hidden">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Assignment</a></li>
+                            <li><a>Events</a></li>
+                            <li><a>Gallery</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <a class="btn btn-ghost text-xl">High School</a>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- for Laptop and desktop -->
+            <div class="navbar bg-base-100 hidden lg:flex lg:items-center lg:justify-between">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl">High School</a>
+                </div>
+                <div class="navbar-center">
+                    <!-- Customize the design for lg screens as needed -->
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Assignment</a></li>
+                        <li><a>Events</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- About Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="px-6 my-auto">
+                <button class="btn btn-xs btn-soft-success btn-pill text-[#00c9a7]">About</button>
+                <h1 class="my-4 card-title text-[#377dff] text-2xl lg:text-3xl">Welcome to My High School</h1>
+                <p>My High School (NHS) is a public secondary school in Bellevue, Washington. It serves students in
+                    grades 9–12 in the southern part of the Bellevue School District, including the neighborhoods of
+                    Eastgate, Factoria, Newport Hills, Newport Shores, Somerset, The Summit, and Sunset. As of the
+                    2014-2015 school year, the principal is Dion Yahoudy. The mascot is the Knight, and the school
+                    colors are scarlet and gold.</p>
+                <div class="card-actions">
+                    <button class="mt-8 btn bg-[#377dff] text-white ">Learn more </button>
+                </div>
+            </div>
+
+            <div class="p-8">
+                <img src="Image/banner.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Our Professional Teacher -->
+        <section class="mx-4">
+
+            <div class="grid">
+                <button class="mx-auto btn text-xl text-[#00c9a7]">Teachers</button>
+                <h1 class="my-4 mx-auto card-title text-[#377dff] text-xl lg:text-3xl">Our Professional Teachers</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-8">
+
+                <div class="rounded-md bg-[#f8f9fa]">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                            class="max-w-sm rounded-lg shadow-2xl" />
+                        <div class="grid">
+                            <h1 class="text-center lg:text-start text-xl font-bold">Kamal Hossen</h1>
+                            <button class="btn mx-auto lg:ml-0 rounded-3xl mt-4 bg-[#377dff] text-white">Get
+                                Started</button>
+                            <p class="py-6 text-center lg:text-start">Provident cupiditate voluptatem et in. Quaerat
+                                fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+
+                            <div class="py-2">
+                                <div class="flex gap-4 my-4 justify-center lg:justify-start">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="rounded-md bg-[#f8f9fa]">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                            class="max-w-sm rounded-lg shadow-2xl" />
+                        <div class="grid">
+                            <h1 class="text-center lg:text-start text-xl font-bold">Jamal Hossen</h1>
+                            <button class="btn mx-auto lg:ml-0 rounded-3xl mt-4 bg-[#377dff] text-white">Get
+                                Started</button>
+                            <p class="py-6 text-center lg:text-start">Provident cupiditate voluptatem et in. Quaerat
+                                fugiat ut assumenda excepturi
+                                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+
+                            <div class="py-2">
+                                <div class="flex gap-4 my-4 justify-center lg:justify-start">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Upcoming Events -->
+        <div class="hero py-12 my-12 bg-[#f8f9fa]">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <button class="btn btn-xs btn-soft-success btn-pill text-[#00c9a7]">Events</button>
+                    <h1 class="mb-20 mt-8 text-center text-[#377dff] text-2xl lg:text-3xl">Upcoming Events</h1>
+                    <button class="btn bg-[#377dff] text-white">Learn more</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
